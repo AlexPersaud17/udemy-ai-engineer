@@ -1,24 +1,58 @@
-# AI Engineer - Udemy Course
+# AI Engineer Udemy Coursework
 
-This repository contains the course materials, datasets, and notebooks for the Udemy AI Engineer course. It includes a variety of Natural Language Processing (NLP) projects and tasks, such as text classification, sentiment analysis, named entity recognition, and topic modeling.
+This repository contains coursework, exercises, and sample data from the AI Engineer course on Udemy. It is organized into different modules covering LangChain, Large Language Models (LLMs), and Natural Language Processing (NLP).
 
-## Files in this repository:
+## Repository Structure
 
-### Datasets:
-- **bbc_news.csv**: Dataset of news articles from the BBC for classification tasks.
-- **book_reviews_sample.csv**: A sample of book reviews for sentiment analysis.
-- **fake_news_data.csv**: Dataset containing fake and real news for a fake news detection model.
-- **news_articles.csv**: Dataset of news articles for text analysis and classification.
-- **tripadvisor_hotel_reviews.csv**: Reviews from TripAdvisor for sentiment and text classification tasks.
+### LangChain (`langchain/`)
+Notebooks exploring LangChain features, including memory, prompt templates, vector stores, and streaming methods.
 
-### Notebooks:
-- **nlp_named_entity_recognition.ipynb**: Notebook focused on Named Entity Recognition (NER) using NLP techniques.
-- **nlp_text_classifier.ipynb**: A text classification notebook using various algorithms and techniques.
-- **nlp_pos_ner_practice.ipynb**: Practice notebook for Part of Speech (POS) tagging and Named Entity Recognition.
-- **nlp_text_preprocessing.ipynb**: Data preprocessing techniques for cleaning and preparing text data for analysis.
-- **nlp_fake_news_identifier.ipynb**: Notebook focused on detecting fake news articles using machine learning models.
-- **nlp_pos_tagging.ipynb**: Notebook focused on POS tagging for text data.
-- **nlp_topic_modeling.ipynb**: Implementation of topic modeling on text data using various algorithms.
-- **nlp_sentiment_analysis.ipynb**: Notebook for building sentiment analysis models for text data.
-- **nlp_vectorizing_text.ipynb**: Techniques for vectorizing text data (e.g., TF-IDF, Word2Vec, etc.).
-- **nlp_sentiment_practice.ipynb**: Practice notebook for building and evaluating sentiment analysis models.
+- **Memory & Conversation**  
+  - `lc_adding_memory_to_chain.ipynb` – Adding memory to a LangChain pipeline  
+  - `lc_chat_message_history.ipynb` – Managing chat message history  
+  - `lc_conversation_buffer_memory.ipynb` – Buffer memory for conversations  
+  - `lc_conversation_summary_memory.ipynb` – Summarizing conversations for context  
+
+- **Prompting & Text Processing**  
+  - `lc_chat_prompt_templates_and_values.ipynb` – Using prompt templates  
+  - `lc_string_output_parser.ipynb` – Parsing string outputs  
+  - `lc_comma_separated_list_output_parser.ipynb` – Parsing comma-separated outputs  
+
+- **Vector Stores & Retrieval**  
+  - `lc_chroma_vectorstore.ipynb` – Working with ChromaDB  
+  - `lc_vectorstore_similarity_search.ipynb` – Vector-based search  
+  - `lc_vectorstore_mmr_search.ipynb` – Maximum Marginal Relevance search  
+
+- **Data Handling & Embeddings**  
+  - `lc_openai_text_embedding.ipynb` – Generating text embeddings  
+  - `lc_pdf_document_loading.ipynb` – Loading data from PDFs  
+  - `lc_markdown_text_splitter.ipynb` – Splitting text from Markdown  
+
+### LLM (`llm/`)
+Exploring LLMs, OpenAI API, Hugging Face transformers, and classification models.
+
+- `llm_chatbot_intro.ipynb` – Introduction to building a chatbot  
+- `llm_hugging_face_transformers.ipynb` – Using Hugging Face models  
+- `llm_qa_with_bert.ipynb` – Question answering with BERT  
+- `llm_text_classification_w_xlnet.ipynb` – Text classification using XLNet  
+
+### NLP (`nlp/`)
+Natural Language Processing (NLP) techniques for sentiment analysis, text classification, and topic modeling.
+
+- `nlp_fake_news_identifier.ipynb` – Detecting fake news using NLP  
+- `nlp_sentiment_analysis.ipynb` – Sentiment analysis using various methods  
+- `nlp_named_entity_recognition.ipynb` – Extracting named entities from text  
+- `nlp_text_preprocessing.ipynb` – Preprocessing text for NLP applications  
+- `nlp_topic_modeling.ipynb` – Identifying topics in a dataset  
+
+### Sample Data (`sample_data/`)
+Datasets used for training and evaluating models.
+
+- `bbc_news.csv` – News articles dataset  
+- `fake_news_data.csv` – Fake news detection dataset  
+- `tripadvisor_hotel_reviews.csv` – Hotel review dataset  
+- `emotions_data/` – Emotion classification dataset  
+
+## Purpose
+This repository serves as a reference for AI, NLP, and LLM concepts covered in the Udemy course. It provides practical implementations and exercises to reinforce learning.
+
